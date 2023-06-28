@@ -1,0 +1,223 @@
+Esse projeto é um sistema com recursos similares ao Discord, porém vai funcionar somente em modo texto e sem recursos de rede.
+
+O sistema é operado através de comandos de uma única linha, compostos por um nome, seguido de parâmetros.\hypertarget{md_README_autotoc_md1}{}\doxysection{Funcionalidades}\label{md_README_autotoc_md1}
+
+\begin{DoxyItemize}
+\item criar um usuário com nome, e-\/mail e senha;
+\item autenticação de usuários;
+\item sair do sistema;
+\item desconectar da aplicaçao;
+\item criar servidores;
+\item mudar descrição de servidores;
+\item setar código de convite para um servidor;
+\item listar servidores do sistema;
+\item remover um servidor;
+\item entrar em um servidor;
+\item sair de um servidor;
+\item listar membros de um servidor;
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md2}{}\doxysection{Tecnologias utilizadas}\label{md_README_autotoc_md2}
+
+\begin{DoxyItemize}
+\item C++;
+\item Cmake;
+\end{DoxyItemize}\hypertarget{md_README_autotoc_md3}{}\doxysection{Comandos}\label{md_README_autotoc_md3}
+\hypertarget{md_README_autotoc_md4}{}\doxysubsubsection{Sair do sistema}\label{md_README_autotoc_md4}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{quit}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md5}{}\doxysubsubsection{Criar um usuário}\label{md_README_autotoc_md5}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{create-\/user <email> <senha\_sem\_espaços> <nome com espaços>}
+
+\end{DoxyCode}
+ \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily email}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. O email que deve ser atribuido ao usuário.    \\\cline{1-3}
+{\ttfamily password}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. A senha que usuário usará para entrar no sistema.    \\\cline{1-3}
+{\ttfamily name}   &{\ttfamily string}   &{\bfseries{Obrigatório}}. O nome do usuário no sistema.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md6}{}\doxysubsubsection{Entrar no sistema}\label{md_README_autotoc_md6}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{login <email> <senha>}
+
+\end{DoxyCode}
+ \tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily email}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. O email utilizado para cadastrar o usuário.    \\\cline{1-3}
+{\ttfamily password}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. A senha utilizada para cadastrar o usuário.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md7}{}\doxysubsubsection{Desconectar do Concorda}\label{md_README_autotoc_md7}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{disconnect}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md8}{}\doxysubsubsection{Criar servidores}\label{md_README_autotoc_md8}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{create-\/server <name>}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily name}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. O nome do servidor.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md9}{}\doxysubsubsection{Mudar a descrição de um servidor}\label{md_README_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{set-\/server-\/desc <name> "{}<description>"{}}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily name}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. O nome do servidor que deseja alterar a descrição.    \\\cline{1-3}
+{\ttfamily description}   &{\ttfamily string}   &{\bfseries{Obrigatório}}. A nova descrição que deseja atribuir ao servidor.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md10}{}\doxysubsubsection{Setar código de acesso para um servidor}\label{md_README_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{set-\/server-\/invite-\/code <name> <code>}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily name}   &{\ttfamily string}   &{\bfseries{Obrigatório e não deve contér espaços}}. O nome do servidor que deseja alterar o código de acesso.    \\\cline{1-3}
+{\ttfamily code}   &{\ttfamily string}   &{\bfseries{Obrigatório}}. O novo código de acesso que deseja atribuir ao servidor.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md11}{}\doxysubsubsection{Listar servidores}\label{md_README_autotoc_md11}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{list-\/servers}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md12}{}\doxysubsubsection{Remover servidor}\label{md_README_autotoc_md12}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{remove-\/server <name>}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily name}   &{\ttfamily string}   &{\bfseries{Obrigatório}}. O nome do servidor a ser removido.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md13}{}\doxysubsubsection{Entrar em um servidor}\label{md_README_autotoc_md13}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{enter-\/server <name>}
+
+\end{DoxyCode}
+
+
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{3}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Parâmetro   }&\cellcolor{\tableheadbgcolor}\textbf{ Tipo   }&\cellcolor{\tableheadbgcolor}\textbf{ Descrição    }\\\cline{1-3}
+\endhead
+{\ttfamily name}   &{\ttfamily string}   &{\bfseries{Obrigatório}}. O nome do servidor que o usuário deseja entrar.   \\\cline{1-3}
+\end{longtabu}
+\hypertarget{md_README_autotoc_md14}{}\doxysubsubsection{Sair do servidor acessado}\label{md_README_autotoc_md14}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{leave-\/server}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md15}{}\doxysubsubsection{Lista participantes do servidor acessado}\label{md_README_autotoc_md15}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{list-\/participants}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md16}{}\doxysection{Execução do projeto}\label{md_README_autotoc_md16}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\#clone o projeto e acesse a pasta}
+\DoxyCodeLine{\$ git clone https://github.com/lucasfontesgaspareto/nlw-\/setup-\/ignite.git}
+\DoxyCodeLine{\$ cd concorde}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Crie e acesse a pasta build}
+\DoxyCodeLine{\$ mkdir build}
+\DoxyCodeLine{\$ cd build}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Gere o execultável com o Cmake}
+\DoxyCodeLine{\$ cmake..}
+\DoxyCodeLine{\$ make}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Execute o programa}
+\DoxyCodeLine{\$ ./program}
+\DoxyCodeLine{}
+\DoxyCodeLine{\# Você pode execultar o programa através de um script com o comando}
+\DoxyCodeLine{\$ ./program < [nome\_do\_script].txt}
+
+\end{DoxyCode}
+\hypertarget{md_README_autotoc_md17}{}\doxysection{Credenciais do autor}\label{md_README_autotoc_md17}
+
+\begin{DoxyItemize}
+\item Nome\+: Jose Victor do Nascimento Ferreira
+\item Matricula na UFRN\+: 20220037248
+\item Github\+: \href{https://github.com/josevictorn}{\texttt{ @josevictorn}} 
+\end{DoxyItemize}

@@ -1,0 +1,85 @@
+\hypertarget{classServer}{}\doxysection{Referência da Classe Server}
+\label{classServer}\index{Server@{Server}}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classServer_ab92ea950c5d89ad922f75955a60edb85}\label{classServer_ab92ea950c5d89ad922f75955a60edb85}} 
+void {\bfseries set\+User\+Id} (int id)
+\item 
+\mbox{\Hypertarget{classServer_acb82dea7b17603f37a5cfe5164f880a7}\label{classServer_acb82dea7b17603f37a5cfe5164f880a7}} 
+int {\bfseries get\+User\+Id} ()
+\item 
+\mbox{\Hypertarget{classServer_a51dea89b589f2dcb99408c46e1999216}\label{classServer_a51dea89b589f2dcb99408c46e1999216}} 
+void {\bfseries set\+Name} (string name)
+\item 
+\mbox{\Hypertarget{classServer_ab3e5ca3979006745dfd8f1ec4c06c885}\label{classServer_ab3e5ca3979006745dfd8f1ec4c06c885}} 
+string {\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{classServer_aafd24382a84ddfb90ce53343b3c9812e}\label{classServer_aafd24382a84ddfb90ce53343b3c9812e}} 
+void {\bfseries set\+Description} (string desc)
+\item 
+\mbox{\Hypertarget{classServer_a784190b8a0f0ebe632f0f2691fe0ca57}\label{classServer_a784190b8a0f0ebe632f0f2691fe0ca57}} 
+string {\bfseries get\+Description} ()
+\item 
+\mbox{\Hypertarget{classServer_a3e835ca720f9605898367ed0b8fd5bca}\label{classServer_a3e835ca720f9605898367ed0b8fd5bca}} 
+void {\bfseries set\+Invite\+Code} (string code)
+\item 
+\mbox{\Hypertarget{classServer_a4081a3f2bad8aa7738614d46a1ddb1a3}\label{classServer_a4081a3f2bad8aa7738614d46a1ddb1a3}} 
+string {\bfseries get\+Invite\+Code} ()
+\item 
+\mbox{\Hypertarget{classServer_a37d88d70d422d4dbee34aabf6ddd9d4f}\label{classServer_a37d88d70d422d4dbee34aabf6ddd9d4f}} 
+void {\bfseries set\+Participants\+Ids} (int user\+Id)
+\item 
+\mbox{\Hypertarget{classServer_a5fed64b197658fcefa1a02ef13323b7c}\label{classServer_a5fed64b197658fcefa1a02ef13323b7c}} 
+vector$<$ int $>$ {\bfseries get\+Participants\+Ids} ()
+\item 
+bool \mbox{\hyperlink{classServer_a0810f857cbf159c92eca9029d1913205}{this\+User\+Is\+AParticipant}} (int user\+Id)
+\begin{DoxyCompactList}\small\item\em Este método verifica se um usuário específico faz parte do servidor em questão. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classServer_a05a7808a90d2216238443d724e08de45}\label{classServer_a05a7808a90d2216238443d724e08de45}} 
+vector$<$ int $>$ {\bfseries participants\+Ids}
+\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classServer_aa7f41c0be9847f2f5764e89b70178b97}\label{classServer_aa7f41c0be9847f2f5764e89b70178b97}} 
+int {\bfseries user\+Id}
+\item 
+\mbox{\Hypertarget{classServer_abaf7319e177fd32b0ac69308de016b41}\label{classServer_abaf7319e177fd32b0ac69308de016b41}} 
+string {\bfseries name}
+\item 
+\mbox{\Hypertarget{classServer_a35551e84c96a31878e0f3202d6a94974}\label{classServer_a35551e84c96a31878e0f3202d6a94974}} 
+string {\bfseries description}
+\item 
+\mbox{\Hypertarget{classServer_a03308afc56d2e5760bc99eac3ea73a6d}\label{classServer_a03308afc56d2e5760bc99eac3ea73a6d}} 
+string {\bfseries invite\+Code}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classServer_a0810f857cbf159c92eca9029d1913205}\label{classServer_a0810f857cbf159c92eca9029d1913205}} 
+\index{Server@{Server}!thisUserIsAParticipant@{thisUserIsAParticipant}}
+\index{thisUserIsAParticipant@{thisUserIsAParticipant}!Server@{Server}}
+\doxysubsubsection{\texorpdfstring{thisUserIsAParticipant()}{thisUserIsAParticipant()}}
+{\footnotesize\ttfamily bool Server\+::this\+User\+Is\+AParticipant (\begin{DoxyParamCaption}\item[{int}]{user\+Id }\end{DoxyParamCaption})}
+
+
+
+Este método verifica se um usuário específico faz parte do servidor em questão. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em user\+Id} & Um inteiro que indica o ID do usuário a ser verificado na lista de participantes do servidor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Retorna}
+1 (true) caso o usuário faça parte do servidor, ou 0 (false) caso contrário. 
+\end{DoxyReturn}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/Server.\+h\item 
+src/Server.\+cpp\end{DoxyCompactItemize}

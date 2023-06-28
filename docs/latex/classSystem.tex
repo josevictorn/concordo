@@ -1,0 +1,199 @@
+\hypertarget{classSystem}{}\doxysection{Referência da Classe System}
+\label{classSystem}\index{System@{System}}
+\doxysubsection*{Membros Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSystem_ad64404a5c6d553a08928e34e098ec2cc}\label{classSystem_ad64404a5c6d553a08928e34e098ec2cc}} 
+void {\bfseries set\+Users} (\mbox{\hyperlink{classUser}{User}} user)
+\item 
+\mbox{\Hypertarget{classSystem_ac3d98d101c0bc590264f447a88cf8814}\label{classSystem_ac3d98d101c0bc590264f447a88cf8814}} 
+vector$<$ \mbox{\hyperlink{classUser}{User}} $>$ {\bfseries get\+Users} ()
+\item 
+void \mbox{\hyperlink{classSystem_a524adc07f39ff8ff0d72144e00dab4b5}{create\+User}} (\mbox{\hyperlink{classUser}{User}} user)
+\begin{DoxyCompactList}\small\item\em Este método adiciona um novo usuário -\/ instância da classe \mbox{\hyperlink{classUser}{User}} -\/ ao vetor de usuários users, que armazena os usuários do sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystem_a13769eaabb519e7514e72edeaa8915bf}{user\+Login}} (string email, string password)
+\begin{DoxyCompactList}\small\item\em Este método autentica um usuário ao sistema, atribuindo os dados do usuário à variável logged. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_a3ffd944612755c0e4a252bf51b0e1489}\label{classSystem_a3ffd944612755c0e4a252bf51b0e1489}} 
+void {\bfseries set\+Servers} (\mbox{\hyperlink{classServer}{Server}} server)
+\item 
+\mbox{\Hypertarget{classSystem_a73f7448c3dccbf032bc97a9beac348ba}\label{classSystem_a73f7448c3dccbf032bc97a9beac348ba}} 
+vector$<$ \mbox{\hyperlink{classServer}{Server}} $>$ {\bfseries get\+Servers} ()
+\item 
+void \mbox{\hyperlink{classSystem_aa03bbb61080e6405491d39da95e214af}{set\+Server\+Description}} (string name, string desc)
+\begin{DoxyCompactList}\small\item\em Este método altera a descrição de um servidor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystem_a6909edf80a36180ffbdc8a5d0d2ca83d}{set\+Server\+Invite\+Code}} (string name, string code)
+\begin{DoxyCompactList}\small\item\em Este método altera a código de acesso de um servidor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_ae842ae51dc3d5c3c4aac2521a6bc2dad}\label{classSystem_ae842ae51dc3d5c3c4aac2521a6bc2dad}} 
+void {\bfseries list\+Servers} ()
+\begin{DoxyCompactList}\small\item\em Este método lista o nome de todos os servidores do sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystem_a0005318dcbf77e2cbc1cadb3a5547e27}{remove\+Server}} (string name)
+\begin{DoxyCompactList}\small\item\em Este método remove um servidor do sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSystem_acd94103af5a90de1d248346a8991daa5}{enter\+Server}} (string name, string code)
+\begin{DoxyCompactList}\small\item\em Este método adiciona o atual usuário logado no sistema à lista de participantes de um servidor, ou seja, concede acesso do usuário logado a um servidor específico. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSystem_a314d93a6341efc322e4dd32a375bf102}{is\+Accessing\+Aserver}} ()
+\begin{DoxyCompactList}\small\item\em Este método verifica se há algum servidor sendo acesso no sistema. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_a56d4ebdd0f54fc0867fb097c3398c1e0}\label{classSystem_a56d4ebdd0f54fc0867fb097c3398c1e0}} 
+void {\bfseries leave\+Server} ()
+\begin{DoxyCompactList}\small\item\em Este método desconecta o usuário logado do servidor que está sendo acesso. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_adf92a2ff3ec43c92180fede0ab993322}\label{classSystem_adf92a2ff3ec43c92180fede0ab993322}} 
+void {\bfseries list\+Participants} ()
+\begin{DoxyCompactList}\small\item\em Este método lista o nome de todos os usuários que fazem parte do servidor que está sendo acessado no momento. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_a7b669e3f1ae4b4aad64f090b6161a429}\label{classSystem_a7b669e3f1ae4b4aad64f090b6161a429}} 
+void {\bfseries set\+Logged} (\mbox{\hyperlink{classUser}{User}} user)
+\item 
+\mbox{\Hypertarget{classSystem_aac5199bf8d8e4ad55577fea0e0040ac8}\label{classSystem_aac5199bf8d8e4ad55577fea0e0040ac8}} 
+\mbox{\hyperlink{classUser}{User}} {\bfseries get\+Logged} ()
+\item 
+bool \mbox{\hyperlink{classSystem_a6ae8fc4756c2da98fa0b2df4acb3e3a7}{is\+Logged}} ()
+\begin{DoxyCompactList}\small\item\em Este método verifica se há algum usuário autenticado no sistema. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSystem_a66379777d789c071beb96b3b0253f212}\label{classSystem_a66379777d789c071beb96b3b0253f212}} 
+void {\bfseries disconnect} ()
+\begin{DoxyCompactList}\small\item\em Este método desconecta o atual usuário autenticado ao sistema. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Atributos Privados}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSystem_abceec73ffd1fafdad75edfdb8298ca44}\label{classSystem_abceec73ffd1fafdad75edfdb8298ca44}} 
+vector$<$ \mbox{\hyperlink{classUser}{User}} $>$ {\bfseries users}
+\item 
+\mbox{\Hypertarget{classSystem_a4ed2a2c7242c0cdf3b6cd0992c79255d}\label{classSystem_a4ed2a2c7242c0cdf3b6cd0992c79255d}} 
+vector$<$ \mbox{\hyperlink{classServer}{Server}} $>$ {\bfseries servers}
+\item 
+\mbox{\Hypertarget{classSystem_a744a9eae8191ef131caf94eb5074802a}\label{classSystem_a744a9eae8191ef131caf94eb5074802a}} 
+\mbox{\hyperlink{classServer}{Server}} $\ast$ {\bfseries server\+Accessed} = nullptr
+\item 
+\mbox{\Hypertarget{classSystem_aa5992d37ace0f68e7d41c84013845838}\label{classSystem_aa5992d37ace0f68e7d41c84013845838}} 
+\mbox{\hyperlink{classUser}{User}} {\bfseries logged}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Funções membros}
+\mbox{\Hypertarget{classSystem_a524adc07f39ff8ff0d72144e00dab4b5}\label{classSystem_a524adc07f39ff8ff0d72144e00dab4b5}} 
+\index{System@{System}!createUser@{createUser}}
+\index{createUser@{createUser}!System@{System}}
+\doxysubsubsection{\texorpdfstring{createUser()}{createUser()}}
+{\footnotesize\ttfamily void System\+::create\+User (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classUser}{User}}}]{user }\end{DoxyParamCaption})}
+
+
+
+Este método adiciona um novo usuário -\/ instância da classe \mbox{\hyperlink{classUser}{User}} -\/ ao vetor de usuários users, que armazena os usuários do sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em user} & Uma instância da classe \mbox{\hyperlink{classUser}{User}} com os dados do usuário a ser adicionado no sistema. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystem_acd94103af5a90de1d248346a8991daa5}\label{classSystem_acd94103af5a90de1d248346a8991daa5}} 
+\index{System@{System}!enterServer@{enterServer}}
+\index{enterServer@{enterServer}!System@{System}}
+\doxysubsubsection{\texorpdfstring{enterServer()}{enterServer()}}
+{\footnotesize\ttfamily void System\+::enter\+Server (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{code }\end{DoxyParamCaption})}
+
+
+
+Este método adiciona o atual usuário logado no sistema à lista de participantes de um servidor, ou seja, concede acesso do usuário logado a um servidor específico. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & Uma string que armazena o nome do servidor em que usuário deseja entrar. \\
+\hline
+{\em code} & Uma string que armazena o código de acesso do servidor que o usuário deseja entrar. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystem_a314d93a6341efc322e4dd32a375bf102}\label{classSystem_a314d93a6341efc322e4dd32a375bf102}} 
+\index{System@{System}!isAccessingAserver@{isAccessingAserver}}
+\index{isAccessingAserver@{isAccessingAserver}!System@{System}}
+\doxysubsubsection{\texorpdfstring{isAccessingAserver()}{isAccessingAserver()}}
+{\footnotesize\ttfamily bool System\+::is\+Accessing\+Aserver (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Este método verifica se há algum servidor sendo acesso no sistema. 
+
+\begin{DoxyReturn}{Retorna}
+1 (true) caso algum servidor esteja sendo acessado, ou 0 (false) caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystem_a6ae8fc4756c2da98fa0b2df4acb3e3a7}\label{classSystem_a6ae8fc4756c2da98fa0b2df4acb3e3a7}} 
+\index{System@{System}!isLogged@{isLogged}}
+\index{isLogged@{isLogged}!System@{System}}
+\doxysubsubsection{\texorpdfstring{isLogged()}{isLogged()}}
+{\footnotesize\ttfamily bool System\+::is\+Logged (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Este método verifica se há algum usuário autenticado no sistema. 
+
+\begin{DoxyReturn}{Retorna}
+1 (true) caso algum usuário esteja autenticado ao sistema, ou 0 (false) caso contrário. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSystem_a0005318dcbf77e2cbc1cadb3a5547e27}\label{classSystem_a0005318dcbf77e2cbc1cadb3a5547e27}} 
+\index{System@{System}!removeServer@{removeServer}}
+\index{removeServer@{removeServer}!System@{System}}
+\doxysubsubsection{\texorpdfstring{removeServer()}{removeServer()}}
+{\footnotesize\ttfamily void System\+::remove\+Server (\begin{DoxyParamCaption}\item[{string}]{name }\end{DoxyParamCaption})}
+
+
+
+Este método remove um servidor do sistema. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & Uma string que armazena o nome do servidor a ser removido do sistema. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystem_aa03bbb61080e6405491d39da95e214af}\label{classSystem_aa03bbb61080e6405491d39da95e214af}} 
+\index{System@{System}!setServerDescription@{setServerDescription}}
+\index{setServerDescription@{setServerDescription}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setServerDescription()}{setServerDescription()}}
+{\footnotesize\ttfamily void System\+::set\+Server\+Description (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{desc }\end{DoxyParamCaption})}
+
+
+
+Este método altera a descrição de um servidor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & Uma string que armazena o nome do servidor a ser manipulado no sistema. \\
+\hline
+{\em desc} & Uma string que armazena a nova descrição do servidor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystem_a6909edf80a36180ffbdc8a5d0d2ca83d}\label{classSystem_a6909edf80a36180ffbdc8a5d0d2ca83d}} 
+\index{System@{System}!setServerInviteCode@{setServerInviteCode}}
+\index{setServerInviteCode@{setServerInviteCode}!System@{System}}
+\doxysubsubsection{\texorpdfstring{setServerInviteCode()}{setServerInviteCode()}}
+{\footnotesize\ttfamily void System\+::set\+Server\+Invite\+Code (\begin{DoxyParamCaption}\item[{string}]{name,  }\item[{string}]{code }\end{DoxyParamCaption})}
+
+
+
+Este método altera a código de acesso de um servidor. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em name} & Uma string que armazena o nome do servidor a ser manipulado no sistema. \\
+\hline
+{\em code} & Uma string que armazena o novo código de acesso do servidor. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classSystem_a13769eaabb519e7514e72edeaa8915bf}\label{classSystem_a13769eaabb519e7514e72edeaa8915bf}} 
+\index{System@{System}!userLogin@{userLogin}}
+\index{userLogin@{userLogin}!System@{System}}
+\doxysubsubsection{\texorpdfstring{userLogin()}{userLogin()}}
+{\footnotesize\ttfamily void System\+::user\+Login (\begin{DoxyParamCaption}\item[{string}]{email,  }\item[{string}]{password }\end{DoxyParamCaption})}
+
+
+
+Este método autentica um usuário ao sistema, atribuindo os dados do usuário à variável logged. 
+
+
+\begin{DoxyParams}{Parâmetros}
+{\em email} & Uma string que armazena o email do usuário a ser autenticado no sistema. \\
+\hline
+{\em password} & Uma string que armazena a senha do usuário a ser autenticado no sistema. \\
+\hline
+\end{DoxyParams}
+
+
+A documentação para essa classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/System.\+h\item 
+src/System.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,58 @@
+\hypertarget{System_8h_source}{}\doxysection{System.\+h}
+\label{System_8h_source}\index{include/System.h@{include/System.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SYSTEM\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SYSTEM\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include "{}./../include/User.h"{}}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}./../include/Server.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 \textcolor{keyword}{class }\mbox{\hyperlink{classSystem}{System}}\{}
+\DoxyCodeLine{9   \textcolor{keyword}{private}:}
+\DoxyCodeLine{10     vector<User> users; \textcolor{comment}{/*Este vetor de Usuários -\/ instâncias da classe User -\/ armazena todos os usuários cadastrados na aplicação.*/}}
+\DoxyCodeLine{11     vector<Server> servers; \textcolor{comment}{/*Este vetor de Servidores -\/ instâncias da classe Server -\/ armazena todos os servidores cadastrados na aplicação.*/}}
+\DoxyCodeLine{12     \mbox{\hyperlink{classServer}{Server}}* serverAccessed = \textcolor{keyword}{nullptr}; \textcolor{comment}{/*Esta instância da classe Server aponta para o servidor que está sendo acessado na aplicação. Como quando iniciada nenhum servidor está sendo acessado, então, de inicio, essa variável é setada como nula.*/}}
+\DoxyCodeLine{13     \mbox{\hyperlink{classUser}{User}} logged; \textcolor{comment}{/*Esta instância da classe User armazena os dados do atual usuário logado no sistema.*/}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15   \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{classSystem}{System}}();}
+\DoxyCodeLine{17     \mbox{\hyperlink{classSystem}{\string~System}}();}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} setUsers(\mbox{\hyperlink{classUser}{User}} user);}
+\DoxyCodeLine{19     vector<User> getUsers(); }
+\DoxyCodeLine{20     }
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_a524adc07f39ff8ff0d72144e00dab4b5}{createUser}}(\mbox{\hyperlink{classUser}{User}} user);}
+\DoxyCodeLine{26     }
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_a13769eaabb519e7514e72edeaa8915bf}{userLogin}}(\textcolor{keywordtype}{string} email, \textcolor{keywordtype}{string} password);}
+\DoxyCodeLine{33     }
+\DoxyCodeLine{34     \textcolor{keywordtype}{void} setServers(\mbox{\hyperlink{classServer}{Server}} server);}
+\DoxyCodeLine{35     vector<Server> getServers();}
+\DoxyCodeLine{36     }
+\DoxyCodeLine{42     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_aa03bbb61080e6405491d39da95e214af}{setServerDescription}}(\textcolor{keywordtype}{string} name, \textcolor{keywordtype}{string} desc);}
+\DoxyCodeLine{43     }
+\DoxyCodeLine{49     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_a6909edf80a36180ffbdc8a5d0d2ca83d}{setServerInviteCode}}(\textcolor{keywordtype}{string} name, \textcolor{keywordtype}{string} code);}
+\DoxyCodeLine{50     }
+\DoxyCodeLine{54     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_ae842ae51dc3d5c3c4aac2521a6bc2dad}{listServers}}();}
+\DoxyCodeLine{55     }
+\DoxyCodeLine{60     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_a0005318dcbf77e2cbc1cadb3a5547e27}{removeServer}}(\textcolor{keywordtype}{string} name);}
+\DoxyCodeLine{61     }
+\DoxyCodeLine{67     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_acd94103af5a90de1d248346a8991daa5}{enterServer}}(\textcolor{keywordtype}{string} name, \textcolor{keywordtype}{string} code);}
+\DoxyCodeLine{68     }
+\DoxyCodeLine{73     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSystem_a314d93a6341efc322e4dd32a375bf102}{isAccessingAserver}}();}
+\DoxyCodeLine{74     }
+\DoxyCodeLine{78     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_a56d4ebdd0f54fc0867fb097c3398c1e0}{leaveServer}}();}
+\DoxyCodeLine{79     }
+\DoxyCodeLine{83     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_adf92a2ff3ec43c92180fede0ab993322}{listParticipants}}();}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keywordtype}{void} setLogged(\mbox{\hyperlink{classUser}{User}} user);}
+\DoxyCodeLine{86     \mbox{\hyperlink{classUser}{User}} getLogged(); }
+\DoxyCodeLine{87     }
+\DoxyCodeLine{92     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classSystem_a6ae8fc4756c2da98fa0b2df4acb3e3a7}{isLogged}}();}
+\DoxyCodeLine{93     }
+\DoxyCodeLine{97     \textcolor{keywordtype}{void} \mbox{\hyperlink{classSystem_a66379777d789c071beb96b3b0253f212}{disconnect}}();}
+\DoxyCodeLine{98 \};}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

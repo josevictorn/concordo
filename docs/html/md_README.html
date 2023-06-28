@@ -1,0 +1,222 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.5"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Concordo: Concordo</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Concordo<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.9.5 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Carregando...</div>
+<div class="SRStatus" id="Searching">Procurando...</div>
+<div class="SRStatus" id="NoMatches">Nenhum resultado encontrado</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div><div class="header">
+  <div class="headertitle"><div class="title">Concordo </div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><p >Esse projeto é um sistema com recursos similares ao Discord, porém vai funcionar somente em modo texto e sem recursos de rede.</p>
+<p >O sistema é operado através de comandos de uma única linha, compostos por um nome, seguido de parâmetros.</p>
+<h1><a class="anchor" id="autotoc_md1"></a>
+Funcionalidades</h1>
+<ul>
+<li>criar um usuário com nome, e-mail e senha;</li>
+<li>autenticação de usuários;</li>
+<li>sair do sistema;</li>
+<li>desconectar da aplicaçao;</li>
+<li>criar servidores;</li>
+<li>mudar descrição de servidores;</li>
+<li>setar código de convite para um servidor;</li>
+<li>listar servidores do sistema;</li>
+<li>remover um servidor;</li>
+<li>entrar em um servidor;</li>
+<li>sair de um servidor;</li>
+<li>listar membros de um servidor;</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Tecnologias utilizadas</h1>
+<ul>
+<li>C++;</li>
+<li>Cmake;</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md3"></a>
+Comandos</h1>
+<h3><a class="anchor" id="autotoc_md4"></a>
+Sair do sistema</h3>
+<div class="fragment"><div class="line">quit</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md5"></a>
+Criar um usuário</h3>
+<div class="fragment"><div class="line">create-user &lt;email&gt; &lt;senha_sem_espaços&gt; &lt;nome com espaços&gt;</div>
+</div><!-- fragment --> <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>email</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. O email que deve ser atribuido ao usuário.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code>password</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. A senha que usuário usará para entrar no sistema.    </td></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>name</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório</b>. O nome do usuário no sistema.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md6"></a>
+Entrar no sistema</h3>
+<div class="fragment"><div class="line">login &lt;email&gt; &lt;senha&gt;</div>
+</div><!-- fragment --> <table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>email</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. O email utilizado para cadastrar o usuário.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code>password</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. A senha utilizada para cadastrar o usuário.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md7"></a>
+Desconectar do Concorda</h3>
+<div class="fragment"><div class="line">disconnect</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
+Criar servidores</h3>
+<div class="fragment"><div class="line">create-server &lt;name&gt;</div>
+</div><!-- fragment --><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>name</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. O nome do servidor.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Mudar a descrição de um servidor</h3>
+<div class="fragment"><div class="line">set-server-desc &lt;name&gt; &quot;&lt;description&gt;&quot;</div>
+</div><!-- fragment --><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>name</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. O nome do servidor que deseja alterar a descrição.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code>description</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório</b>. A nova descrição que deseja atribuir ao servidor.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md10"></a>
+Setar código de acesso para um servidor</h3>
+<div class="fragment"><div class="line">set-server-invite-code &lt;name&gt; &lt;code&gt;</div>
+</div><!-- fragment --><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>name</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório e não deve contér espaços</b>. O nome do servidor que deseja alterar o código de acesso.    </td></tr>
+<tr class="markdownTableRowEven">
+<td class="markdownTableBodyLeft"><code>code</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório</b>. O novo código de acesso que deseja atribuir ao servidor.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md11"></a>
+Listar servidores</h3>
+<div class="fragment"><div class="line">list-servers</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md12"></a>
+Remover servidor</h3>
+<div class="fragment"><div class="line">remove-server &lt;name&gt;</div>
+</div><!-- fragment --><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>name</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório</b>. O nome do servidor a ser removido.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md13"></a>
+Entrar em um servidor</h3>
+<div class="fragment"><div class="line">enter-server &lt;name&gt;</div>
+</div><!-- fragment --><table class="markdownTable">
+<tr class="markdownTableHead">
+<th class="markdownTableHeadLeft">Parâmetro   </th><th class="markdownTableHeadLeft">Tipo   </th><th class="markdownTableHeadLeft">Descrição    </th></tr>
+<tr class="markdownTableRowOdd">
+<td class="markdownTableBodyLeft"><code>name</code>   </td><td class="markdownTableBodyLeft"><code>string</code>   </td><td class="markdownTableBodyLeft"><b>Obrigatório</b>. O nome do servidor que o usuário deseja entrar.   </td></tr>
+</table>
+<h3><a class="anchor" id="autotoc_md14"></a>
+Sair do servidor acessado</h3>
+<div class="fragment"><div class="line">leave-server</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
+Lista participantes do servidor acessado</h3>
+<div class="fragment"><div class="line">list-participants</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md16"></a>
+Execução do projeto</h1>
+<div class="fragment"><div class="line">#clone o projeto e acesse a pasta</div>
+<div class="line">$ git clone https://github.com/lucasfontesgaspareto/nlw-setup-ignite.git</div>
+<div class="line">$ cd concorde</div>
+<div class="line"> </div>
+<div class="line"># Crie e acesse a pasta build</div>
+<div class="line">$ mkdir build</div>
+<div class="line">$ cd build</div>
+<div class="line"> </div>
+<div class="line"># Gere o execultável com o Cmake</div>
+<div class="line">$ cmake..</div>
+<div class="line">$ make</div>
+<div class="line"> </div>
+<div class="line"># Execute o programa</div>
+<div class="line">$ ./program</div>
+<div class="line"> </div>
+<div class="line"># Você pode execultar o programa através de um script com o comando</div>
+<div class="line">$ ./program &lt; [nome_do_script].txt</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md17"></a>
+Credenciais do autor</h1>
+<ul>
+<li>Nome: Jose Victor do Nascimento Ferreira</li>
+<li>Matricula na UFRN: 20220037248</li>
+<li>Github: <a href="https://github.com/josevictorn">@josevictorn</a> </li>
+</ul>
+</div></div><!-- contents -->
+</div><!-- PageDoc -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5
+</small></address>
+</body>
+</html>

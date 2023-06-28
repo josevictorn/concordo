@@ -1,0 +1,41 @@
+\hypertarget{Server_8h_source}{}\doxysection{Server.\+h}
+\label{Server_8h_source}\index{include/Server.h@{include/Server.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#ifndef SERVER\_H}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#define SERVER\_H}}
+\DoxyCodeLine{3 }
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <vector>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classServer}{Server}}\{}
+\DoxyCodeLine{10   \textcolor{keyword}{private}:}
+\DoxyCodeLine{11     \textcolor{keywordtype}{int} userId; \textcolor{comment}{/*Esta variável do tipo inteiro armazena o ID do usuário criador do servidor.*/}}
+\DoxyCodeLine{12     \textcolor{keywordtype}{string} name; \textcolor{comment}{/*Esta variável do tipo string armazena o nome do servidor.*/}}
+\DoxyCodeLine{13     \textcolor{keywordtype}{string} description; \textcolor{comment}{/*Esta variável do tipo string armazena a descrição do servidor.*/}}
+\DoxyCodeLine{14     \textcolor{keywordtype}{string} inviteCode; \textcolor{comment}{/*Esta variável do tipo string armazena o código de acesso ao servidor.*/}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16   \textcolor{keyword}{public}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{classServer}{Server}}();}
+\DoxyCodeLine{18     \mbox{\hyperlink{classServer}{\string~Server}}();}
+\DoxyCodeLine{19     vector<int> participantsIds; \textcolor{comment}{/*Este vetor de inteiros armazena os ID's dos usuários que são participantes do servidor.*/}}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setUserId(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{22     \textcolor{keywordtype}{int} getUserId();}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} setName(\textcolor{keywordtype}{string} name);}
+\DoxyCodeLine{24     \textcolor{keywordtype}{string} getName();}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} setDescription(\textcolor{keywordtype}{string} desc);}
+\DoxyCodeLine{26     \textcolor{keywordtype}{string} getDescription();}
+\DoxyCodeLine{27     \textcolor{keywordtype}{void} setInviteCode(\textcolor{keywordtype}{string} code);}
+\DoxyCodeLine{28     \textcolor{keywordtype}{string} getInviteCode();}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} setParticipantsIds(\textcolor{keywordtype}{int} userId);}
+\DoxyCodeLine{30     vector<int> getParticipantsIds();}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{37     \textcolor{keywordtype}{bool} \mbox{\hyperlink{classServer_a0810f857cbf159c92eca9029d1913205}{thisUserIsAParticipant}}(\textcolor{keywordtype}{int} userId);}
+\DoxyCodeLine{38 \};}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{40 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
